@@ -1,0 +1,13 @@
+<h1>Show List from API Data in Angular</h1>
+<table border="1" [cellPadding]="10">
+  <tr>
+    <td>Id</td>
+    <td>Title</td>
+    <td>User Id</td>
+  </tr>
+  <tr *ngFor="let userDetails of data; index as i ">
+    <td>{{userDetails.id || i+1}}</td>
+    <td>{{userDetails.title}}</td>
+    <td>{{userDetails.userId}}</td>
+  </tr>
+</table>
